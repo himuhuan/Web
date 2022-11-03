@@ -1,22 +1,109 @@
 <!DOCTYPE html>
-
+<!--suppress ALL -->
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title> Hello, world </title>
-    </head>
-    <body>
-        <p> Hello, this is my <a href="https://github.com/himuhuan">profile. </a> </p>
-        <div>
-            <img src="img/face.jpg" alt="face" />
-        </div>
-        <p> 
-            My hobby
-            <ol>
-                <li> reading </li>
-                <li> programming </li>
-                <li> badminton </li>
-            </ol> 
-        </p>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .p {
+            font-family: "Inconsolata", "Microsoft YaHei UI Light", "Serif";
+        }
+
+        .h {
+            text-align: center;
+            font-family: Consolas, Serif;
+            color: dodgerblue
+        }
+
+        .images div{
+            width: 500px;
+            margin-left: 60px;
+            margin-bottom: 20px;
+        }
+
+        .images div img {
+            width: 100%;
+            display: block;
+        }
+
+        .simple_table table {
+            width: 100%;
+            margin: 15px 0;
+            border: 0;
+        }
+        .simple_table th {
+            background-color: #5da9f3;
+            color: white;
+        }
+        .simple_table, .simple_table th, .simple_table td {
+            font-family: "Comic Sans MS", "Microsoft JhengHei", "Serif";
+            text-align: center;
+            padding: 4px;
+            border-collapse: collapse;
+        }
+        .simple_table th,.table4_3 td {
+            border: 1px solid #5da9f3;
+            border-width:1px 0 1px 0
+        }
+        .simple_table tr {
+            border: 1px solid #5da9f3;
+        }
+        .simple_table tr:nth-child(odd){
+            background-color: rgba(93, 169, 243, 0.51);
+        }
+        .simple_table tr:nth-child(even){
+            background-color: #fdfdfd;
+        }
+
+    </style>
+    <title>My First HTML</title>
+</head>
+<body>
+    <h1 class="h">
+        What is the Anime?
+    </h1>
+    <hr />
+
+    <p class="p"> Anime 特指日本动画, 详情参见<a href="https://app.moegirl.org.cn"> 萌娘百科 </a></p>
+    <p class="p"> 以下是一些参考图片 </p>
+    <div class="images">
+        <div style="margin: 0 auto; margin-bottom: 5px"> <img src="./img/3a78eb5ead97bcaa929e9b51287eded0.jpg" alt="Anime2" /> </div>
+        <div style="margin: 0 auto"> <img src="img/97386a9f6d13b02cc8485f7d1b1b6d02.jpg" alt="Anime1"/> </div>
+    </div>
+
+    
+    <p class="p">
+        近年来, Anime 作为一种文化在世界被广泛传播, 目前主要的消费市场集中于日本, 亚洲以及欧美. <br />
+        中国市场虽然庞大, 日本本身也与中国文化有亲和力, 但是由于两国之间复杂的政治因素, Anime的中国市场已不如欧美
+    </p>
+
+    <hr />
+    <h2 class="h"> 市场份额分析表 </h2>
+    <table class="simple_table" style="margin: 0 auto">
+        <tr>
+            <th> 年份 </th>
+            <th> 其它市场份额 </th>
+            <th> 欧美市场份额 </th>
+            <th> 日本市场份额 </th>
+        </tr>
+        <tr>
+            <td> 2019 </td>
+            <td> 20% </td>
+            <td> 20% </td>
+            <td> 60% </td>
+        </tr>
+        <tr>
+            <td> 2020 </td>
+            <td> 18% </td>
+            <td> 22% </td>
+            <td> 60% </td>
+        </tr>
+        <tr>
+            <td> 2021 </td>
+            <td> 15% </td>
+            <td> 35% </td>
+            <td> 50% </td>
+        </tr>
+    </table>
+    <h6 style="font-style: italic; text-align: center" class="p"> 数据仅供参考 </h6>
+</body>
 </html>
